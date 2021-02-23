@@ -1,7 +1,8 @@
 
 function insert(num) {
-    document.form.textview.value = document.form.textview.value + num
+    document.form.textview.value += num
 }
+
 function equal() {
     var exp = document.form.textview.value;
     if (exp) {
@@ -18,16 +19,16 @@ function back() {
     document.form.textview.value = exp.substring(0, exp.length - 1);
 }
 
-function addition(){
+function addition() {
     var exp = document.form.textview.value;
-    if (exp.slice(-1) != '+'){
-        if(exp.length != 0){
-            if(exp.slice(-1) != '-'){
-                insert('+') 
+    if (exp.slice(-1) != '+') {
+        if (exp.length != 0) {
+            if (exp.slice(-1) != '-') {
+                insert('+')
             }
         }
-    }else{
-        insert('') 
+    } else {
+        insert('')
     }
 }
 // dark mode function
