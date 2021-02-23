@@ -1,3 +1,6 @@
+*{
+    touch-action: manipulation;
+}
 .dark-mode{
     background-color: black;
 }
