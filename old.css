@@ -1,50 +1,75 @@
-.dark-mode{
+
+root,body,.main {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode,.main {
+    background-color: black;
+    color: whi;
+  }
+.button{
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+
+
+    border: none;
+    color: white;
     background-color: black;
 }
+.button:hover{
+    transition: .2s;
+    background-color: rgb(111, 10, 155);
+    color: black;
+}
+.textview{
+    position: relative;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 210px;
+    height: 50px;
+    margin: 8px;
+    font-size: 25px;
 
+    
+}
+.textview:hover{
+    /* background-color: white; */
+}
+.result{
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    border: none;
+    width: 105px;
+    height: 50px;
+    margin: 2px;
+    margin-left: 2px;
+    font-size: 25px;
+    padding: 5px;
+    
+}
 .main{
     border-style: solid;
     border-width: 4px;
     border-color: rgb(24, 23, 23);
+    box-shadow: #20b7ff;
     position: fixed;
-    left: 5%;
+    /* zoom: 7.5; */
     top: 5%;
-    border: none;
+    left: 15%;
 }
 
-.textview{
-    margin: 8px;
-    width: 510px;
-    height: 80px;
-    font-size: 70px;
-    background-color: black;
-    color: white;
-    border: none;
-}
-.textview:hover{
-    transition: 2s;
-    background-color: orangered;
-}
-.button{
-    margin: 4px;
-    width: 120px;
-    height: 120px;
-    font-weight: bolder;
-    font-size: 100px;
-    color: white;
-    background-color: black;
-    border: none;
-}
-.button:hover{
-    transition: .3s;
-    color: black;
-    background-color: rgb(79, 92, 4);
-    box-shadow: 0 0 10px #13b3ff, 0 0 15px #13b3ff;
-}
 
-  /* Resposive button */
-  input[type="checkbox"] {
-    position: relative;
+
+
+/* Resposive button */
+input[type="checkbox"] {
     width: 120px;
     height: 40px;
     -webkit-appearance: none;
@@ -53,15 +78,12 @@
     border-radius: 20px;
     box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 5), inset 0 0 15px rgba(0, 0, 0, 2);
 }
-
 input:checked[type="checkbox"] {
     background: linear-gradient(0deg, #6dd1ff, #20b7ff);
     box-shadow: 0 0 2px #6dd1ff, 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 5), inset 0 0 15px rgba(0, 0, 0, 2);
 }
-
 input[type="checkbox"]:before {
     content: '';
-    position: absolute;
     top: 0;
     left: 0;
     width: 80px;
@@ -72,16 +94,13 @@ input[type="checkbox"]:before {
     transform: scale(.98, .96);
     transition: .5s;
 }
-
 input:checked[type="checkbox"]:before {
     /* background: #63cdff; */
     left: 40px;
-    box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
+    /* box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff; */
 }
-
 input[type="checkbox"]:after {
     content: '';
-    position: absolute;
     top: calc(50% - 2px);
     left: 65px;
     width: 4px;
@@ -90,7 +109,6 @@ input[type="checkbox"]:after {
     border-radius: 50%;
     transition: .5s;
 }
-
 input:checked[type="checkbox"]::after {
     background: #63cdff;
     left: 105px;
@@ -100,4 +118,5 @@ input:checked[type="checkbox"]::after {
     position: fixed;
     right: 5%;
     top: 5%;
+    /* zoom: 3; */
 }
