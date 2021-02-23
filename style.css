@@ -71,7 +71,7 @@ root,body,.main {
     border-color: rgb(24, 23, 23);
     box-shadow: #20b7ff;
     position: fixed;
-    zoom: 7.5;
+    /* zoom: 7.5; */
     top: 5%;
     left: 15%;
 }
